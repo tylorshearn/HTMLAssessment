@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My HTML Assessment Page</title>
+  <link rel='stylesheet' href='assessment.css'>
+</head>
+
+<body>
+  <h2 class="subjectHeader">TEXT</h2>
+  <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, eros sit amet euismod tincidunt, nisl leo vestibulum dui, sed tincidunt lacus ligula eu sapien. Proin at diam tincidunt, tincidunt ex at, venenatis nisl.
+  </p>
+  <blockquote>
+    <em><strong>Integer</strong> auctor est ac fringilla euismod. Donec laoreet urna vel diam blandit venenatis. Nam fermentum turpis a mauris condimentum, vitae faucibus leo commodo.
+  </em>
+  </blockquote>
+  <p><strong>Vestibulum</strong> elit nisi, posuere ut hendrerit a, molestie eu leo. Donec sit amet ullamcorper turpis. Mauris eu tellus blandit turpis fermentum dapibus eget sed ex. Vivamus auctor in velit ac suscipit. In hac habitasse platea dictumst.
+  </p>
+
+  <h3 class="subjectHeader">TABLE</h3>
+
+  <table id="scoreBoard">
+    <caption>Scores by quarter</caption>
+    <thead>
+      <tr>
+        <th rowspan="2">Team Name</th>
+        <th colspan="2">First Half</th>
+        <th colspan="2">Second Half</th>
+        <th rowspan="2">Final</th>
+      </tr>
+      <tr>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th>Q4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Denver</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>Chicago</td>
+        <td>0</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>15</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th>7</th>
+        <th>9</th>
+        <th>3</th>
+        <th>13</th>
+        <th>32</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h4 class="subjectHeader">LIST</h4>
+
+  <ul id="teamRoster">
+    <li><img height="40" src="https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg" alt="Broncos Logo"/>
+      <br>
+      <a class="hyperLink" href="http://www.denverbroncos.com/" target="_blank">Denver Broncos</a>
+      <ul>
+        <li>Coach: Gary Kubiak</li>
+        <li>QB
+          <ol>
+            <li>Peyton Manning</li>
+            <li>Brock Osweiler</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+    <li><img height="40" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg" alt="Bears Logo"/>
+      <br>
+      <a class="hyperLink" href="http://www.chicagobears.com/" target="_blank">Chicago Bears</a>
+      <ul>
+        <li>Coach: John Fox</li>
+        <li>QB
+          <ol>
+            <li>Jay Cutler</li>
+            <li>David Foles</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h5 class="subjectHeader">FORM</h5>
+
+  <form>
+    <label>First: <input name="fname"></label>
+    <label>Last: <input name="lname"></label><br>
+    <label for="favSport">Favorite Sport:</label>
+    <select id="favSport">
+  <option value="soccer">Soccer</option>
+  <option value="football">Football</option>
+  <option value="baseball">Baseball</option>
+  <option value="polo">Polo</option>
+</select><br> I have:
+    <ul id="checkbox-grid">
+      <li><label><input type="checkbox" name="activity" value="attended"/>Attended</label></li>
+      <li><label><input type="checkbox" name="activity" value="played" />Played</label></li>
+      <li><label><input type="checkbox" name="activity" value="coached" />Coached</label></li>
+      <li><label><input type="checkbox" name="activity" value="wagered" />Bet on</label></li>
+    </ul>
+    this sport.<br> For this sport I prefer the:
+    <label><input type="radio" name="league" value="amateur">Amateur</label>
+    <label><input type="radio" name="league" value="college">College</label>
+    <label><input type="radio" name="league" value="pro">Professional</label><br>
+    <input type="submit">
+  </form>
+</body>
+
+</html>
